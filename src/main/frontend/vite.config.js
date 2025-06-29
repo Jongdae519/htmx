@@ -6,13 +6,13 @@ export default defineConfig({
         tailwindcss()
     ],
     build: {
-        outDir: '../resources/static',
+        outDir: '../resources/static/dist',
+        emptyOutDir: true,
+        manifest: true,
+        assetsDir: '',
         rollupOptions: {
             input: {
-                main: './style.css'
-            },
-            output: {
-                assetFileNames: 'main.css'
+                main: './index.js'
             }
         }
     }

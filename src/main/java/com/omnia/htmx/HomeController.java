@@ -34,10 +34,4 @@ public class HomeController {
         model.addAttribute("now", LocalDateTime.now().toString());
         return "clicked :: result";
     }
-
-    // TODO Delete this page after configuration.
-    @GetMapping("/test")
-    public String test(Model model) {
-        return "test";
-    }
 }
